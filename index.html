@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VibeUnlock | Exclusive Content</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">Vibe<span>Unlock</span></div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#content">Content</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <main>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="small-title">WELCOME TO VIBEUNLOCK</p>
+
+        <h1>Unlock the <span>Vibe.</span></h1>
+
+        <p>
+          Discover exclusive AI images, videos and premium content
+          available only on VibeUnlock.
+        </p>
+
+        <a href="#content" class="hero-btn">Explore Content</a>
+      </div>
+    </section>
+
+    <section id="content" class="content-section">
+
+      <div class="section-title">
+        <p>EXCLUSIVE CONTENT</p>
+        <h2>Choose Your Vibe</h2>
+      </div>
+
+      <div class="content-grid">
+
+        <!-- CARD 1 -->
+        <div class="content-card">
+
+          <div class="media-container">
+            <img
+              src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80"
+              alt="Premium AI image"
+            >
+
+            <div class="locked">
+              🔒 LOCKED
+            </div>
+          </div>
+
+          <div class="card-info">
+            <h3>Exclusive AI Look</h3>
+            <p>Premium photo collection</p>
+
+            <div class="card-bottom">
+              <strong>₹49</strong>
+              <button onclick="unlockContent('Exclusive AI Look', 49)">
+                Unlock
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- CARD 2 -->
+        <div class="content-card">
+
+          <div class="media-container">
+            <img
+              src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=800&q=80"
+              alt="Premium video"
+            >
+
+            <div class="locked">
+              🔒 LOCKED
+            </div>
+          </div>
+
+          <div class="card-info">
+            <h3>Behind The Vibe</h3>
+            <p>Exclusive premium video</p>
+
+            <div class="card-bottom">
+              <strong>₹99</strong>
+              <button onclick="unlockContent('Behind The Vibe', 99)">
+                Unlock
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- CARD 3 -->
+        <div class="content-card">
+
+          <div class="media-container">
+            <img
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80"
+              alt="Premium collection"
+            >
+
+            <div class="locked">
+              🔒 LOCKED
+            </div>
+          </div>
+
+          <div class="card-info">
+            <h3>VIP Collection</h3>
+            <p>Special exclusive content</p>
+
+            <div class="card-bottom">
+              <strong>₹149</strong>
+              <button onclick="unlockContent('VIP Collection', 149)">
+                Unlock
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section id="about" class="about">
+
+      <h2>About VibeUnlock</h2>
+
+      <p>
+        VibeUnlock is a platform where creators can share exclusive
+        photos and videos with their audience.
+      </p>
+
+      <p>
+        Follow your favorite creators and unlock premium content.
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <!-- PAYMENT / UNLOCK POPUP -->
+
+  <div id="paymentModal" class="modal">
+
+    <div class="modal-box">
+
+      <button class="close-btn" onclick="closeModal()">×</button>
+
+      <div class="lock-icon">🔐</div>
+
+      <h2>Unlock Content</h2>
+
+      <p id="selectedContent"></p>
+
+      <div class="price-box">
+        <span>Price</span>
+        <strong id="selectedPrice"></strong>
+      </div>
+
+      <button class="pay-btn" onclick="demoPayment()">
+        Continue to Payment
+      </button>
+
+      <p class="secure">
+        🔒 Secure checkout
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <footer>
+    <p>© 2026 VibeUnlock. All rights reserved.</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
